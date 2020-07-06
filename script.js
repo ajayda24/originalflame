@@ -16,7 +16,7 @@ function posDelete(pos,name){
         if(pos <= t)
         {
             name = name.slice(0,pos-1) + name.slice(pos);
-            alert(name);
+            
             var t=name.length;
             var f=name;
 
@@ -28,14 +28,14 @@ function posDelete(pos,name){
             if(pos!=0)
             {
                 name = name.slice(0,pos-1) + name.slice(pos);
-                alert(name);
+               
                 var f=name;
 
             }
             else
             {
                 name = name.slice(0,-1);
-                alert(name);
+                document.getElementById("demo").innerHTML =name;
                 var f=name;
             }
 
